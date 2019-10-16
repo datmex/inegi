@@ -1,8 +1,12 @@
-from app import app
 import methods
-from flask import jsonify, request
-
+from flask import jsonify, request, Flask
+from flask_cors import CORS
+app = Flask(__name__)
+CORS(app)
 ### ---  metodos utilizados
+@app.route('/')
+def hello():
+	return "Hola mundo!"
 
 @app.route('/clasi',methods=["POST"])
 def code(): 
@@ -42,8 +46,8 @@ def not_found(error=None):
     return resp
 
 if __name__ == "__main__":
-	#app.run(host=methods.host(),debug=False,port=5000)
-	app.run()
+	app.run(host=methods.host(),debug=False,port=5000)
+	#app.run()
 
 ####   CODIGO QUE PUEDE SER DE UTILIDAD 
 

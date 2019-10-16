@@ -4,7 +4,7 @@ from bson.json_util import dumps
 from bson.objectid import ObjectId
 from flask import request
 import socket
-import requests
+#import requests
 import re
 
 # --- metodos utilizados
