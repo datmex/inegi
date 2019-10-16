@@ -25,11 +25,6 @@ def get_prod():
 	
 ### --- no utilizados
 
-@app.route('/clasifica')
-def clasifica():
-	resp = methods.clasi()
-	return resp
-
 @app.route('/acti')
 def actividades():
 	resp = methods.acti()
