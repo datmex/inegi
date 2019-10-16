@@ -46,8 +46,8 @@ def not_found(error=None):
     return resp
 
 if __name__ == "__main__":
-	app.run(host=methods.host(),debug=False,port=5000)
-	#app.run()
+	#app.run(host=methods.host(),debug=False,port=5000)
+	app.run()
 
 ####   CODIGO QUE PUEDE SER DE UTILIDAD 
 

@@ -1,4 +1,4 @@
-from app import mongo
+from base import mongo
 import json
 from bson.json_util import dumps
 from bson.objectid import ObjectId
